@@ -140,9 +140,8 @@
         <div class="container">
           <div class="hero">
         
-              <h1 class="title" id="demo3">Inspiring store <br>to buy more.</h1>
-            <p class="text">Online shopping is the best way to buy everything you need in two clicks.
-              </p>
+              <h1 class="title">Inspiring store <br>to buy more.</h1>
+          
               <a href="./shop.html" class="btn">go to cart</a>  
            
           
@@ -160,18 +159,28 @@
 
 
       <div class="products__wrapper hero-products" >
+        <div class="container">
         <section class="products">
        
+          <div class="products__text-box">
           <h3 class="products__title">Our Products</h3>
+          <p class="text products__text">Online shopping is the best way to buy everything you need in two clicks.
+          </p>
+        </div>
             <div class="sub-title__box">
               <p class="text success-message js_success-message">Success! You have added <span
                   class="js_success-product-name"></span> to your shopping cart!</p>
             </div>
-            <ul class="products__list js_products__list">
-             
-            </ul>
+            
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper js_products__list">
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
 
         </section>
+      </div>
       </div>
 
      
@@ -271,12 +280,22 @@
       document.body.classList.toggle('open-menu');
     })
   </script>
-  <script src="./js/aos.js"></script>
+  <script src="./js/swiper-bundle.min.js"></script>
   <script>
-    AOS.init({
-      duration: 500,
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+    1440: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+  }
     });
   </script>
+
 
 </body>
 
