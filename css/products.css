@@ -18,11 +18,13 @@
     margin-bottom: 2rem;
 }
 .sub-title__box {
+    width: 100%;
+}
+.sub-title__box--r {
     position: absolute;
     top: 10rem;
     left: 50%;
     transform: translate(-50%,0);
-    width: 100%;
     max-width: 100rem;
 }
 .prod__title {
@@ -40,6 +42,7 @@
     opacity: 0;
     transition: all 0.3s ease-in-out;
     visibility: hidden;
+    text-align: center;
 }
 .success-message > * {
     font-family: inherit;
