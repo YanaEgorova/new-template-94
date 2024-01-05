@@ -10,6 +10,10 @@ body.open-menu {
     align-items: center;
     justify-content: space-between;
 }
+.header .logo {
+    font-size: 1.6rem;
+    text-align: left;
+}
 .header {
     padding: 2rem 0;
 }
@@ -67,7 +71,8 @@ body.open-menu {
 }
 .cart__span-box {
     font-size: 2.2rem;
-    display: none;
+    display: flex;
+    margin-right: 2rem;
     align-items: center;
 }
 .cart__span-box svg {
